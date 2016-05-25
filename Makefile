@@ -2,7 +2,7 @@
 
 all: html
 
-html: sample-slides.html
+html: sample-slides.html full-stack.html
 
 %.slides: %.sld
 	perl bin/pre.pl $< > $@
