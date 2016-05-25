@@ -23,7 +23,7 @@ publish-start:
 	git merge master
 	
 publish-end:
-	git add -f *.html
+	git add -f *.html images/*
 	git commit -am 'auto gen code'
 	git push -f origin gh-pages
 	git checkout master
