@@ -1,10 +1,13 @@
 
-Introduction to
-our X<VDOM.pm> & X<vdom-webkit> cluster
+我的“全栈工程师”成长之路
 
-☺{{#author|agentzh@yahoo.cn}}☺
-{{#author|章亦春 (agentzh)}}
-{{#date|2009.9}}
+☺{{#author|lloydzhou@qq.com}}☺
+{{#author|周林 (lloydzhou)}}
+{{#date|2016.5}}
+----
+
+  V<自我介绍>
+
 ----
 
 
