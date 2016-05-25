@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title></title>
+    <link href="css/sporx.css" rel="stylesheet" type="text/css" />
+    <script src="lib/jquery.js"></script>
+    <script src="lib/sporx.js"></script>
+
+  </head>
+  <body>
+      <div>
+    <div id="canvasToolbar">
+
+      <!--div class="fr">
+        <button onclick="Sporx.addPage()">New Page</button>
+        <button onclick="Sporx.toggleEditMode()">Edit</button>
+        <button onclick="Sporx.reload()">Reload</button>
+      </div-->
+
+      <div>
+        <button onclick="sporx.printPdf()">pdf</button>
+        <button onclick="sporx.firstSlide()">|&lt;&lt;</button>
+        <button onclick="sporx.prevSlide()">&lt;</button>
+        <button onclick="sporx.nextSlide()">&gt;</button>
+        <button onclick="sporx.lastSlide()">&gt;&gt;|</button>
+        <input type="text" id="current_page" size="4" onkeypress="if (this.value) sporx.showSlide(parseInt(this.value)-1);" />
+        /
+        <span id="max_page"></span>
+      </div>
+    </div>
+    </div>
+    <div id="canvas"><div id="content"></div></div>
+    <iframe style="display:none;" id="dataLoader"></iframe>
+    <div id="edit">
+      <textarea id="textField"></textarea>
+    </div>
+    <textarea id="builtinCode" style="width:1px;position:absolute;left:-5px;overflow:hidden;">  
+我的“全栈工程师”成长之路
+  
+☺{{#author|lloydzhou@qq.com}}☺
+{{#author|周林 (lloydzhou)}}
+{{#date|2016.5}}
+----
+  
+  {{#v|自我介绍}}
+  ➥  {{https://github.com/lloydzhou}}
+  ➥  {{https://lloydzhou.github.io/}}
+  
+----
+{{img src="images/desktop.jpg" width="800" height="600"}}
+----
+  
+何为“{{#v|全栈工程师}}”
+  
+➥  {{http://www.laurencegellert.com/2012/08/what-is-a-full-stack-developer/}}
+  
+To me, a Full Stack Developer is someone with familiarity in each layer,
+if not mastery in many and a genuine interest in all software technology.
+  
+  服务器
+  网络
+  主机环境
+  数据建模
+  业务逻辑
+  API层/Action层/MVC
+  界面
+  用户体验和理解用户
+  业务所需
+  
+  
+----
+  
+ {{#cm|# The VDOM dump is much smaller than the original HTML:}}
+ {{#v|$}} ls -lh {{#ci|sina.vdom}}
+ -rw------- 1 agentz agentz {{#x|278K}} 2009-04-10 10:30 sina.vdom
+----
+  
+  
+   {{#cm|✓}} We want to keep VDOM dump size {{#ci|small}}.
+   {{#cm|✓}} We want to keep VDOM dump {{#ci|unambiguous}}.
+   {{#cm|✓}} We want to make VDOM more {{#x|human-readable}} and more
+         {{#x|human-writable}}.
+         (Yeah, XML/HTML's syntax is very {{#i|cumbersome}}.)
+   {{#cm|✓}} We want to make VDOM {{#i|parsers}} &amp; {{#i|dumper}}
+         {{#ci|trivial}} to implement and verify.
+         (tens of lines of Perl for example ;))
+   {{#cm|✓}} Low level structures like {{#ci|text runs}} and {{#ci|text nodes}}
+         are hard to express naturally in HTML or XML.
+  
+----
+  
+{{#x|☺}} We've already made both
+Mozilla {{#x|Gecko}} and Apple {{#x|WebKit}} {{#i|emit}} VDOMs
+  
+----
+  
+☺ {{#ci|Any questions}}? ☺
+  
+----
+  
+</textarea>
+  </body>
+</html>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is the Takahashi-Method-based Presentation Tool in XUL.
+   -
+   - The Initial Developer of the Original Code is SHIMODA Hiroshi.
+   - Portions created by the Initial Developer are Copyright (C) 2005
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s): SHIMODA Hiroshi <piro@p.club.ne.jp>
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+
