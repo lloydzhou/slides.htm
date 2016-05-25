@@ -1,6 +1,8 @@
 .PHONY: all
 
-all: sample-slides.html
+all: html
+
+html: sample-slides.html
 
 %.slides: %.sld
 	perl bin/pre.pl $< > $@
@@ -14,3 +16,16 @@ all: sample-slides.html
 %.dot: %.tt
 	tpage $< > $@
 
+publish: publish-start html publish-end
+
+publish-start:
+	git checkout gh-pages
+	git merge master
+	
+publish-end:
+	git add -f *.html
+	git commit -am 'auto gen code'
+	git push -f origin gh-pages
+	git checkout master
+	git push origin master
+	
